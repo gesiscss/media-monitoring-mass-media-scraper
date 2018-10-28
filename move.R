@@ -1,4 +1,5 @@
 setwd("/home/ehnertpp/newspaper-scraping-germany/")
+#Funktion zum Verschieben der HTML-Dokumente
 move <- function(agency, kategorie) {
   
   for (kat in kategorie)
