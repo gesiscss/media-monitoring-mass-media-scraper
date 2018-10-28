@@ -248,7 +248,7 @@ scraper_articles <- function(folderInput, folderOutput, agency) {
   })
 }
 
-
+#Schleife zur Berarbeitung aller Nachrichtenportale
 agency <- c("ard","bild","faz","focus","freitag","gmx","jungefreiheit","ntv","spiegel","stern","sueddeutsche","tagesspiegel","tonline","webde","welt","yahoode","zeit")
 for (agentur in agency)
 {
