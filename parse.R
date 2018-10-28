@@ -54,9 +54,8 @@ parser_articles <- function(agency, headline, headline_intro, datetime, domain, 
     tweets <- page_parser(tweets_css, attr = tweets_attr, multi = tweets_multi)
     
     #Tweet-IDs aus den Strings befreien
-    
-     tweets <- gsub("(.*?\\/)([0-9]{15,21})", "\\2 ", tweets, perl = TRUE)
-     tweets <- gsub("(.*)(\\?.*)", "\\1 ", tweets, perl = TRUE)
+    tweets <- gsub("(.*?\\/)([0-9]{15,21})", "\\2 ", tweets, perl = TRUE)
+    tweets <- gsub("(.*)(\\?.*)", "\\1 ", tweets, perl = TRUE)
     tweets <- gsub("([h|'].*$)", "", tweets, perl = TRUE)     
     #Leerzeichen vor und nach dem String k?rzen 
     headline <- trimws(headline, which = "both")
